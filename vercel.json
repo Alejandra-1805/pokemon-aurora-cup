@@ -1,0 +1,1 @@
+{"buildCommand":"npm run build","outputDirectory":"public","framework":null,"functions":{"api/index.js":{"maxDuration":30,"includeFiles":"lib/**"}},"rewrites":[{"source":"/api/:path*","destination":"/api"}],"headers":[{"source":"/api/:path*","headers":[{"key":"Cache-Control","value":"no-store"}]}]}

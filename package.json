@@ -1,0 +1,1 @@
+{"name":"pokemon-aurora-cup","version":"1.0.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test tests/*.test.mjs"},"dependencies":{"@vercel/blob":"2.7.0"},"engines":{"node":">=22"}}
