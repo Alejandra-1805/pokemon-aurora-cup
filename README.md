@@ -38,16 +38,13 @@ Without `TOKEN_MINT`, practice and the leaderboard page work, but ranked holder 
 
 ## GitHub handoff and automatic deploys
 
-1. Create an empty repository called `pokemon-aurora-cup` in the desired GitHub account.
-2. Upload this entire folder, including `api/`, `lib/`, `scripts/`, `public/`, `package.json`, `package-lock.json`, `vercel.json`, `.github/` and `.gitignore`.
-3. In the **existing** Vercel project, open Settings → Git → Connect Git Repository. Choose that repository; production branch `main`.
-4. Future pushes/merges to `main` create production deployments automatically; branches and PRs get previews. There is no need to deploy manually after each edit.
-5. Add the other developer by GitHub username in repository Settings → Collaborators. A repository URL alone does not grant write permission. Alternatively, they can fork and submit PRs.
-6. Do not import a second Vercel project unless you intend a separate deployment; the current secrets and Blob store are linked to the existing project.
+The repository is connected to the existing Vercel project. Pushes or merges to `main` automatically trigger production deployments; other branches and pull requests receive preview deployments.
 
-GitHub source: https://github.com/Alejandra-1805/pokemon-aurora-cup
-
-The deployment integration is managed in the existing Vercel project.
+- Source: https://github.com/Alejandra-1805/pokemon-aurora-cup
+- Production: https://pokemon-aurora-cup.vercel.app
+- Keep secrets and the Blob store in the existing Vercel project.
+- Add the other developer by GitHub username under repository Settings → Collaborators. A public repository link does not grant write access. They can also fork and submit pull requests.
+- There is no need to upload the ZIP or deploy manually after each edit.
 
 ## Editing the game
 
@@ -69,3 +66,4 @@ Unofficial Pokémon fan demo. Not affiliated with Nintendo, Game Freak, Creature
 Animated Pokémon and Oran Berry sprites: https://github.com/PokeAPI/sprites
 Trainer sprites and base tiles: https://github.com/pret/pokefirered and https://github.com/pret/pokeemerald
 Other scene graphics and UI are procedural.
+
